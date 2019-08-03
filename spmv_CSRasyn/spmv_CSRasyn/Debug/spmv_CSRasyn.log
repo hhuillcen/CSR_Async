@@ -1,0 +1,37 @@
+﻿Build started 22/02/2019 0:13:51.
+     1>Project "D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\spmv_CSRasyn\spmv_CSRasyn.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\spmv_CSRasyn.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /DWIN32 /D_DEBUG /D_CONSOLE /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" /I. /FIcuda_runtime.h /c D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\spmv_CSRasyn\spmv_CSRasyn.cu 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file spmv_CSRasyn.cu...
+         cmd.exe /C "C:\Users\Herwin\AppData\Local\Temp\tmp60e8ae4234694c8584d723874a1d82e3.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\spmv_CSRasyn.cu.obj "D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\spmv_CSRasyn\spmv_CSRasyn.cu"
+         
+         D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\spmv_CSRasyn>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\bin\nvcc.exe" -gencode=arch=compute_20,code=\"sm_20,compute_20\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin"  -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\include"  -G   --keep-dir Debug -maxrregcount=0  --machine 32 --compile -cudart static  -g   -DWIN32 -D_DEBUG -D_CONSOLE -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /Od /Zi /RTC1 /MDd " -o Debug\spmv_CSRasyn.cu.obj "D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\spmv_CSRasyn\spmv_CSRasyn.cu" 
+         spmv_CSRasyn.cu
+     1>D:/doctoradoCS/HPC/paper1/spmv_CSRasyn/spmv_CSRasyn/spmv_CSRasyn.cu(125): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>D:/doctoradoCS/HPC/paper1/spmv_CSRasyn/spmv_CSRasyn/spmv_CSRasyn.cu(168): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>D:/doctoradoCS/HPC/paper1/spmv_CSRasyn/spmv_CSRasyn/spmv_CSRasyn.cu(172): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>D:/doctoradoCS/HPC/paper1/spmv_CSRasyn/spmv_CSRasyn/spmv_CSRasyn.cu(174): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+     1>D:/doctoradoCS/HPC/paper1/spmv_CSRasyn/spmv_CSRasyn/spmv_CSRasyn.cu(252): warning C4244: 'argument' : conversion from 'double' to 'size_t', possible loss of data
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\Debug\spmv_CSRasyn.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v7.5\lib\Win32" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib cudart.lib /MANIFEST /ManifestFile:"Debug\spmv_CSRasyn.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\Debug\spmv_CSRasyn.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\Debug\spmv_CSRasyn.lib" /MACHINE:X86 Debug\spmv_CSRasyn.cu.obj
+         Debug\stdafx.obj
+     1>stdafx.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/INCREMENTAL:NO' specification
+         spmv_CSRasyn.vcxproj -> D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\Debug\spmv_CSRasyn.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\Debug\spmv_CSRasyn.exe;#1" /manifest Debug\spmv_CSRasyn.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Deleting file "Debug\spmv_CSRasyn.unsuccessfulbuild".
+         Touching "Debug\spmv_CSRasyn.lastbuildstate".
+     1>Done Building Project "D:\doctoradoCS\HPC\paper1\spmv_CSRasyn\spmv_CSRasyn\spmv_CSRasyn.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:10.78
